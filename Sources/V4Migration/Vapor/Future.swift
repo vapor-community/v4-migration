@@ -15,7 +15,7 @@ public struct Future { }
 
 extension EventLoopFuture {
     
-    @available(*, unavailable, renamed: "flatMapErrorThrowing", message: "[Migration] Renamed to EventLoopFuture")
+    @available(*, unavailable, renamed: "flatMapErrorThrowing", message: "[Migration] Renamed to flatMapErrorThrowing")
     public func catchMap(_ callback: @escaping (Error) throws -> Value) -> EventLoopFuture<Value> {
         fatalError()
     }
